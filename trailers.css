@@ -1,0 +1,503 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101010;
+
+    color: #e6e1d8;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.titulo-trailers {
+    width: 80%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 90px 0 80px;
+
+    text-align: center;
+}
+
+.titulo-trailers span {
+    color: #a71919;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.titulo-trailers h2 {
+    margin-top: 15px;
+
+    color: #e8e2d8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 55px;
+
+    font-weight: normal;
+
+    letter-spacing: 2px;
+}
+
+.linha-titulo {
+    width: 70px;
+
+    height: 1px;
+
+    margin: 25px auto;
+
+    background-color: #a71919;
+}
+
+.titulo-trailers p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.trailer-principal {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 0 auto 110px;
+
+    display: flex;
+
+    background-color: #171717;
+
+    border: 1px solid #272727;
+}
+
+.video-principal {
+    width: 65%;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+}
+
+.video-principal iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+}
+
+.informacao-principal {
+    width: 35%;
+
+    padding: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.informacao-principal > span {
+    color: #a71919;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.informacao-principal h3 {
+    color: #e8e2d8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.informacao-principal p {
+    color: #999;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.linha-info {
+    width: 50px;
+
+    height: 1px;
+
+    margin: 25px 0;
+
+    background-color: #a71919;
+}
+
+.informacao-principal .descricao-menor {
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+.outros-trailers {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 0 auto 110px;
+
+    display: flex;
+
+    gap: 70px;
+}
+
+.titulo-videos {
+    width: 25%;
+
+    flex-shrink: 0;
+}
+
+.titulo-videos span {
+    color: #a71919;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.titulo-videos h3 {
+    color: #e8e2d8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 36px;
+
+    font-weight: normal;
+
+    line-height: 1.3;
+
+    margin-top: 18px;
+}
+
+
+
+.grid-trailers {
+    width: 75%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.card-trailer {
+    background-color: #171717;
+
+    border: 1px solid #272727;
+
+    transition: 0.3s ease;
+
+    overflow: hidden;
+}
+
+.card-trailer:hover {
+    border-color: #5a1818;
+
+    transform: translateY(-5px);
+}
+
+
+.video {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background-color: #000;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: none;
+}
+
+
+.info-trailer {
+    padding: 25px;
+}
+
+.info-trailer > span {
+    color: #a71919;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.info-trailer h4 {
+    color: #d9d3ca;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+
+    font-weight: normal;
+
+    margin: 12px 0 8px;
+}
+
+.info-trailer p {
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.sobre-videos {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 80px 0 110px;
+
+    display: flex;
+
+    gap: 80px;
+
+    border-top: 1px solid #292929;
+}
+
+.texto-videos {
+    width: 40%;
+}
+
+.texto-videos > span {
+    color: #a71919;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.texto-videos h3 {
+    color: #e8e2d8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    line-height: 1.3;
+
+    margin-top: 18px;
+}
+
+.texto-videos p {
+    color: #888;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-top: 25px;
+}
+
+
+.destaques {
+    width: 60%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.destaques > div {
+    padding: 30px;
+
+    background-color: #171717;
+
+    border: 1px solid #272727;
+
+    transition: 0.3s ease;
+}
+
+.destaques > div:hover {
+    border-color: #5a1818;
+
+    transform: translateY(-4px);
+}
+
+.destaques span {
+    color: #7d1717;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+}
+
+.destaques h4 {
+    color: #d9d3ca;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+
+    font-weight: normal;
+
+    margin: 15px 0;
+}
+
+.destaques p {
+    color: #808080;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+footer {
+    width: 100%;
+
+    padding: 35px 0;
+
+    text-align: center;
+
+    background-color: #0c0c0c;
+
+    border-top: 1px solid #252525;
+}
+
+footer p {
+    color: #666;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 900px) {
+
+    .trailer-principal {
+        width: 90%;
+
+        flex-direction: column;
+    }
+
+    .video-principal {
+        width: 100%;
+    }
+
+    .informacao-principal {
+        width: 100%;
+
+        padding: 40px;
+    }
+
+    .outros-trailers {
+        width: 90%;
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .titulo-videos,
+    .grid-trailers {
+        width: 100%;
+    }
+
+    .sobre-videos {
+        width: 90%;
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .texto-videos,
+    .destaques {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .titulo-trailers {
+        width: 90%;
+
+        padding: 60px 0;
+    }
+
+    .titulo-trailers h2 {
+        font-size: 42px;
+    }
+
+    .trailer-principal {
+        width: 92%;
+    }
+
+    .informacao-principal {
+        padding: 30px;
+    }
+
+    .informacao-principal h3 {
+        font-size: 31px;
+    }
+
+    .outros-trailers {
+        width: 92%;
+    }
+
+    .grid-trailers {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-videos {
+        width: 92%;
+    }
+
+    .destaques {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,496 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101010;
+
+    color: #e6e1d8;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.titulo-trilha {
+    width: 80%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 90px 0 80px;
+
+    text-align: center;
+}
+
+.titulo-trilha span {
+    color: #a71919;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.titulo-trilha h2 {
+    margin-top: 15px;
+
+    color: #e8e2d8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 55px;
+
+    font-weight: normal;
+
+    letter-spacing: 2px;
+}
+
+.linha-titulo {
+    width: 70px;
+
+    height: 1px;
+
+    margin: 25px auto;
+
+    background-color: #a71919;
+}
+
+.titulo-trilha p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #aaa;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+.destaque-musical {
+    width: 80%;
+    max-width: 1200px;
+
+    min-height: 500px;
+
+    margin: 0 auto 110px;
+
+    display: flex;
+
+    background-color: #171717;
+
+    border: 1px solid #272727;
+
+    overflow: hidden;
+}
+
+.imagem-musica {
+    width: 45%;
+
+    min-height: 500px;
+
+    overflow: hidden;
+}
+
+.imagem-musica img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter: grayscale(15%);
+}
+
+.texto-musica {
+    width: 55%;
+
+    padding: 65px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.subtitulo {
+    color: #a71919;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.texto-musica h3 {
+    color: #e8e2d8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 40px;
+
+    font-weight: normal;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.texto-musica p {
+    color: #999;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+
+.musicas {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 0 auto 110px;
+
+    display: flex;
+
+    gap: 80px;
+}
+
+.titulo-musicas {
+    width: 30%;
+}
+
+.titulo-musicas span {
+    color: #a71919;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.titulo-musicas h3 {
+    margin-top: 18px;
+
+    color: #e8e2d8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 36px;
+
+    font-weight: normal;
+
+    line-height: 1.3;
+}
+
+.lista-musicas {
+    width: 70%;
+}
+
+.musica {
+    min-height: 95px;
+
+    padding: 20px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    border-top: 1px solid #292929;
+
+    transition: 0.3s ease;
+}
+
+.musica:last-child {
+    border-bottom: 1px solid #292929;
+}
+
+.musica:hover {
+    background-color: #171717;
+
+    padding-left: 32px;
+}
+
+.numero-musica {
+    color: #641717;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+
+    width: 30px;
+}
+
+.informacao-musica {
+    flex: 1;
+}
+
+.informacao-musica h4 {
+    color: #d9d3ca;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+
+    font-weight: normal;
+
+    margin-bottom: 7px;
+}
+
+.informacao-musica p {
+    color: #777;
+
+    font-size: 13px;
+}
+
+.tipo-musica {
+    color: #666;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+.clima {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 80px 0 110px;
+
+    display: flex;
+
+    gap: 80px;
+
+    border-top: 1px solid #292929;
+}
+
+.texto-clima {
+    width: 40%;
+}
+
+.texto-clima > span {
+    color: #a71919;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.texto-clima h3 {
+    margin-top: 18px;
+
+    color: #e8e2d8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    line-height: 1.3;
+}
+
+.texto-clima p {
+    margin-top: 25px;
+
+    color: #888;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.categorias {
+    width: 60%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.categorias > div {
+    padding: 30px;
+
+    background-color: #171717;
+
+    border: 1px solid #272727;
+
+    transition: 0.3s ease;
+}
+
+.categorias > div:hover {
+    border-color: #5a1818;
+
+    transform: translateY(-4px);
+}
+
+.categorias span {
+    color: #7d1717;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+}
+
+.categorias h4 {
+    color: #d9d3ca;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+
+    font-weight: normal;
+
+    margin: 15px 0;
+}
+
+.categorias p {
+    color: #808080;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+footer {
+    width: 100%;
+
+    padding: 35px 0;
+
+    text-align: center;
+
+    background-color: #0c0c0c;
+
+    border-top: 1px solid #252525;
+}
+
+footer p {
+    color: #666;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 900px) {
+
+    .destaque-musical {
+        width: 90%;
+
+        flex-direction: column;
+    }
+
+    .imagem-musica {
+        width: 100%;
+
+        height: 400px;
+
+        min-height: 400px;
+    }
+
+    .texto-musica {
+        width: 100%;
+
+        padding: 45px;
+    }
+
+    .musicas {
+        width: 90%;
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .titulo-musicas,
+    .lista-musicas {
+        width: 100%;
+    }
+
+    .clima {
+        width: 90%;
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .texto-clima,
+    .categorias {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .titulo-trilha {
+        width: 90%;
+
+        padding: 60px 0;
+    }
+
+    .titulo-trilha h2 {
+        font-size: 42px;
+    }
+
+    .destaque-musical {
+        width: 92%;
+    }
+
+    .texto-musica {
+        padding: 30px;
+    }
+
+    .texto-musica h3 {
+        font-size: 31px;
+    }
+
+    .musicas {
+        width: 92%;
+    }
+
+    .musica {
+        gap: 15px;
+
+        padding: 20px 10px;
+    }
+
+    .tipo-musica {
+        display: none;
+    }
+
+    .clima {
+        width: 92%;
+    }
+
+    .categorias {
+        grid-template-columns: 1fr;
+    }
+
+}
